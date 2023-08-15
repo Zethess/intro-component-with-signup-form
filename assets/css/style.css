@@ -77,11 +77,15 @@ h1{
   top: 10px;
   right: 60px;
 }
+.input-container p{
+  display: none;
+}
 .input-container.error p{
   color: var(--red);
   text-align: right;
   margin: 5px 5px 0px 0px;
   font-size: 11px;
+  display: block;
   
 }
 .input-container.error::before{
@@ -144,6 +148,7 @@ h1{
 
 .main-bottom-terms-paragraph span{
   color: var(--red);
+  font-weight: bold;
 }
 @media screen and (min-width: 900px){
   body{
@@ -160,7 +165,7 @@ h1{
   }
   .main{
     display: grid;
-    gap: 45px;
+    column-gap: 45px;
     grid-template-areas: 
     "first second"
     "first thrid"
