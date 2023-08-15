@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="main-top">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="main-middle">
+      <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+    </div>
+    <div class="main-bottom">
+      <form class="form-div" >
+        <div class="input-container">
+          <input type="text" class="first-name inputs" name="campo1" placeholder="First Name" required>
+          <p>First Name cannot be empty</p>
+        </div>
+        <div class="input-container">
+          <input type="text" class="second-name inputs" name="campo2" placeholder="Last Name" required>
+          <p>Last Name cannot be empty</p>
+        </div>
+        <div class="input-container">
+          <input type="email" class="email inputs" name="campo3" placeholder="Email Address" required>
+          <p>Looks like this is not an email</p>
+        </div>
+        <div class="input-container">
+          <input type="text" class="password inputs" name="campo4" placeholder="Password" required>
+          <p>Password cannot be empty</p>
+        </div>
+        <button class="claim-button"type="submit">Claim your free trial</button>
+
+      </form>
+      <p class="main-bottom-terms-paragraph">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </div>
+  </div>
+  <script src="assets/js/lib/jquery-3.7.0.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
